@@ -19,7 +19,7 @@ export default function MainLayout({
     <html lang="en" data-theme="cupcake">
       <body>
         {/* buat header */}
-        <header className="bg-ungu">
+        <header className="bg-ungu fixed top-0 w-full z-50">
           <div className="flex flex-row items-center justify-between px-4">
             <div className="flex flex-row items-center">
               <Image src={"/logo.png"} alt="Logo KORA" width={150} height={70} priority></Image>
@@ -39,7 +39,9 @@ export default function MainLayout({
           </div>
         </header>
 
-        {children}
+        <div className="mt-24">
+          {children}
+        </div>
 
         {/* buat footer */}
         <footer className="text-white bg-ungu fixed bottom-0 w-full text-center py-4">
