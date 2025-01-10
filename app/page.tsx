@@ -21,10 +21,18 @@ export default function Home() {
               About Us
             </Link>
           </div>
-          
         </div>
 
-        
+        <div className="md:w-1/2 flex justify-center">
+          <Image
+            src="/logo.png"
+            alt="KoraMenu"
+            width={700}
+            height={700}
+            // className="rounded-lg shadow-2xl"
+            priority
+          />
+        </div>
       </main>
     </div>
   );
