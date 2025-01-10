@@ -15,6 +15,7 @@ const config: Config = {
         "kuning": "#ffcc00",
         "ungu": "#A35C7A",
         "maroon": "#740938",
+        "coklat": "#7C444F",
         "hitam": {
           "tua": "#000000",
           "sedang": "#333333",
