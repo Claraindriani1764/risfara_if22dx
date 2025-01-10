@@ -5,7 +5,6 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-putih p-[20px] relative">
       <div className="absolute top-0 left-0 w-full h-full bg-gray-50 -z-20"></div>
-
      {/* Section About  */}
      <div className="flex flex-col md:flex-row items-start gap-[40px] md:gap-60 relative">
         <div className="text-left max-w-lg flex flex-col gap-6 md:mt-20">
@@ -47,10 +46,15 @@ export default function About() {
           />
         </div>
       </div>
+      
+      {/* Divider */}
+<div className="my-12 w-full max-w-4xl border-t border-gray-300"></div>
+
       {/* Contact Us Section */}
-      <div className="mt-20 w-full max-w-4xl p-8 bg-gray-100 rounded-lg shadow-lg text-center">
+      <div className="mt-10 w-full max-w-4xl p-8 bg-gray-100 rounded-lg shadow-lg text-center">
         <h2 className="text-3xl font-semibold text-hitam-tua mb-6">Contact Us</h2>
-        <p className="text-lg text-hitam-sedang mb-8">
+        <p 
+        className="text-lg text-hitam-sedang mb-8">
           Jika Anda memiliki pertanyaan, saran, atau ingin mengetahui lebih
           lanjut tentang Kora Menu, jangan ragu untuk menghubungi kami melalui
           formulir di bawah ini.
@@ -80,6 +84,7 @@ export default function About() {
         </form>
       </div>
       <br /><br />
+
     </div>
   );
 }
