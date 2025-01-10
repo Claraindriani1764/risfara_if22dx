@@ -43,11 +43,13 @@ export default function About() {
             alt="Chef"
             width={384}
             height={384}
-            className="object-cover rounded-full transform transition"
+            className="object-cover rounded-full hover:scale-110 transform transition"
           />
         </div>
       </div>
 
+      {/* Divider */}
+<div className="my-12 w-full max-w-4xl border-t border-gray-300"></div>
 
       {/* Contact Us Section */}
       <div className="mt-10 w-full max-w-4xl p-8 bg-gray-100 rounded-lg shadow-lg text-center">
