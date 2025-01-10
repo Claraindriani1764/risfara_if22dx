@@ -19,8 +19,11 @@ export default function MainLayout({
     <html lang="en" data-theme="cupcake">
       <body>
         {/* buat header */}
-        <header>
-          <Image src={"/logo.png"} alt="Logo KORA" width={150} height={70}priority></Image>
+        <header className="bg-hitam-muda">
+          <div className="flex flex-row items-center px-4">
+            <Image src={"/logo.png"} alt="Logo KORA" width={150} height={70} priority></Image>
+            <h1 className="text-2xl font-bold text-white ml-4">Selamat Datang di KoraMenu</h1>
+          </div>
         </header>
 
         
