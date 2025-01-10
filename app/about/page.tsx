@@ -6,14 +6,13 @@ export default function About() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-putih p-[20px] relative">
       <div className="absolute top-0 left-0 w-full h-full bg-gray-50 -z-20"></div>
       {/* About Section */}
-      <div className="flex flex-col md:flex-row items-start gap-[40px] md:gap-60 relative">
-        {/* Left Text Section */}
+     {/* Section About  */}
+     <div className="flex flex-col md:flex-row items-start gap-[40px] md:gap-60 relative">
         <div className="text-left max-w-lg flex flex-col gap-6 md:mt-20">
           <h1 className="text-5xl font-semibold text-hitam-tua leading-snug">
             Kora Menu
           </h1>
-          <p 
-          className="text-hitam-sedang text-lg text-justify">
+          <p className="text-hitam-sedang text-lg text-justify">
             Kora Menu adalah platform website untuk memudahkan kasir atau admin
             mengelola menu restoran. Pengguna dapat menambah, memperbarui, atau
             menghapus menu yang tidak tersedia secara real-time. Dengan
@@ -34,6 +33,18 @@ export default function About() {
               Book a table
             </Link>
           </div>
+        </div>
+
+        {/* Section Gambar */}
+        <div className="relative w-72 h-72 md:w-96 md:h-96 flex-shrink-0 md:mt-20">
+          <div className="absolute inset-0 w-full h-full bg-orange-400 rounded-full -z-10"></div>
+          <Image
+            src="/chef.png"
+            alt="Chef"
+            width={384}
+            height={384}
+            className="object-cover rounded-full"
+          />
         </div>
       </div>
     </div>
