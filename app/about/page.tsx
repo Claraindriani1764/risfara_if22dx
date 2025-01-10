@@ -59,16 +59,17 @@ export default function About() {
           <input
             type="text"
             placeholder="Your Name"
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="p-4 rounded-md border text-hitam-sedang  border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="p-4 rounded-md border text-hitam-sedang  border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
           <textarea
             placeholder="Your Message"
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            rows={4}
+            className="p-4 rounded-md border text-hitam-sedang  border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
           ></textarea>
           <button
             type="submit"
@@ -78,6 +79,7 @@ export default function About() {
           </button>
         </form>
       </div>
+      <br /><br />
     </div>
   );
 }
