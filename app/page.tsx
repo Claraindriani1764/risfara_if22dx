@@ -3,8 +3,19 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-8 flex items-start justify-center bg-white">
-      <main className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-4 mt-20">
+    <div className="min-h-screen p-8 flex items-start justify-center relative">
+      {/* Background image dengan opacity */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/logo.png" 
+          alt="Background"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+      </div>
+
+      <main className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12 px-4 mt-20 relative z-10">
         <div className="flex flex-col gap-6 md:w-1/2">
           <h1 className="text-6xl font-bold text-maroon">
             KoraMenu
@@ -29,7 +40,6 @@ export default function Home() {
             alt="KoraMenu"
             width={700}
             height={700}
-            // className="rounded-lg shadow-2xl"
             priority
           />
         </div>
