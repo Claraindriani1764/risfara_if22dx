@@ -26,7 +26,7 @@ export default function MainLayout({
         
 
         {/* buat footer */}
-        <footer className="text-white bg-hitam-muda mt-10">
+        <footer className="text-white bg-hitam-muda fixed bottom-0 w-full text-center py-4">
           Copyright &copy; 2025 - KoraMenu
         </footer>
       </body>
