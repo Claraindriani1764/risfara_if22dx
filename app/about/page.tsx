@@ -48,8 +48,12 @@ export default function About() {
         </div>
       </div>
 
-      {/* Divider */}
-<div className="my-12 w-full max-w-4xl border-t border-gray-300"></div>
+      {/* Stylish Divider */}
+      <div className="my-12 w-full flex items-center justify-center">
+        <div className="w-1/3 h-0.5 bg-gradient-to-r from-orange-500 to-gray-300"></div>
+        <div className="mx-2 text-orange-500 text-lg font-bold">OR</div>
+        <div className="w-1/3 h-0.5 bg-gradient-to-l from-orange-500 to-gray-300"></div>
+      </div>
 
       {/* Contact Us Section */}
       <div className="mt-10 w-full max-w-4xl p-8 bg-gray-100 rounded-lg shadow-lg text-center">
@@ -63,17 +67,17 @@ export default function About() {
           <input
             type="text"
             placeholder="Your Name"
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
+            className="p-4 rounded-md border text-hitam-sedang border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
+            className="p-4 rounded-md border text-hitam-sedang border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
           />
           <textarea
             placeholder="Your Message"
             rows={4}
-            className="p-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
+            className="p-4 rounded-md border text-hitam-sedang border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition placeholder-gray-500"
           ></textarea>
           <button
             type="submit"
@@ -83,6 +87,7 @@ export default function About() {
           </button>
         </form>
       </div>
+      <br /><br />
     </div>
   );
 }
