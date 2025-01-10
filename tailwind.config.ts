@@ -13,6 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         "merah": "#ff0000",
         "kuning": "#ffcc00",
+        "ungu": "#A35C7A",
+        "maroon": "#740938",
         "hitam": {
           "tua": "#000000",
           "sedang": "#333333",
