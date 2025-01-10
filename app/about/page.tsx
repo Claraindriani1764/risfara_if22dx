@@ -12,15 +12,30 @@ export default function About() {
           <h1 className="text-5xl font-semibold text-hitam-tua leading-snug">
             Kora Menu
           </h1>
-          <p className="text-hitam-sedang text-lg text-justify">
+          <p 
+          className="text-hitam-sedang text-lg text-justify">
             Kora Menu adalah platform website untuk memudahkan kasir atau admin
             mengelola menu restoran. Pengguna dapat menambah, memperbarui, atau
             menghapus menu yang tidak tersedia secara real-time. Dengan
             antarmuka yang sederhana, Kora Menu memastikan pengelolaan menu yang
             efisien dan akurat bagi pelanggan.
           </p>
+          <div className="flex gap-6">
+            <Link
+              href="/menu"
+              className="bg-hitam-tua text-putih px-8 py-3 rounded-md hover:bg-hitam-sedang transition"
+            >
+              Menu
+            </Link>
+            <Link
+              href="/book"
+              className="bg-orange-500 text-putih px-8 py-3 rounded-md hover:bg-orange-600 transition"
+            >
+              Book a table
+            </Link>
           </div>
-          </div>
+        </div>
+      </div>
     </div>
   );
 }
