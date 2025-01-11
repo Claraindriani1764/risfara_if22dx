@@ -59,4 +59,49 @@ export default function Menu() {
           image: "/chicken-katsu.JPG",
         },
       ];
+      return (
+        <div className="min-h-screen p-8 bg-gray-100">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-maroon">Kora Menu</h1>
+          </div>
+    
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {menuItems.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden"
+              >
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={400}
+                  height={300}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-bold text-gray-800 mb-2">
+                    {item.name}
+                  </h2>
+                  <p className="text-gray-600 mb-4">{item.description}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-lg font-bold text-maroon">
+                      Rp. {item.price}
+                    </span>
+                    {/* <button className="bg-maroon text-white px-4 py-2 rounded-full hover:bg-ungu transition">
+                      Adicionar
+                    </button> */}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+    
+          <div className="fixed bottom-0 left-0 w-full bg-maroon text-white text-center py-4">
+            <Link href="/cart" className="font-semibold">
+              (1) Veja seu carrinho
+            </Link>
+          </div>
+          <br /><br />
+        </div>
+      );
     }
