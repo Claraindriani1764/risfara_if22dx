@@ -95,13 +95,6 @@ export default function Menu() {
               </div>
             ))}
           </div>
-    
-          <div className="fixed bottom-0 left-0 w-full bg-maroon text-white text-center py-4">
-            <Link href="/cart" className="font-semibold">
-              (1) Veja seu carrinho
-            </Link>
-          </div>
-          <br /><br />
         </div>
       );
     }
