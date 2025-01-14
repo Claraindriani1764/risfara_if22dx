@@ -13,11 +13,14 @@ export default function About() {
             Kora Menu
           </h1>
           <p className="text-gray-600 text-lg text-justify">
-            Kora Menu adalah platform website untuk memudahkan kasir atau admin
-            mengelola menu restoran. Pengguna dapat menambah, memperbarui, atau
-            menghapus menu yang tidak tersedia secara real-time. Dengan
-            antarmuka yang sederhana, Kora Menu memastikan pengelolaan menu yang
-            efisien dan akurat bagi pelanggan.
+          Koramenu adalah website resmi dari Kora Kitchen, 
+          sebuah e-commerce yang berfokus pada penjualan berbagai 
+          makanan khas Korea. Platform ini dirancang untuk memberikan 
+          pengalaman belanja yang mudah dan menyenangkan, memungkinkan 
+          pelanggan untuk menjelajahi menu autentik, memesan makanan favorit, 
+          dan mendapatkan informasi detail tentang setiap hidangan. Koramenu 
+          juga menawarkan layanan pengiriman cepat dan promosi menarik untuk 
+          para pecinta kuliner Korea.
           </p>
           <div className="flex gap-6">
             <Link
@@ -30,7 +33,7 @@ export default function About() {
               href="/book"
               className="bg-orange-500 text-white px-8 py-3 rounded-md hover:bg-orange-600 hover:scale-105 transform transition"
             >
-              Book a Table
+              Maps
             </Link>
           </div>
         </div>
